@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         meusdados = getSharedPreferences(mypreference, Context.MODE_PRIVATE);
 
         Button btnlogin = findViewById(R.id.login);
-        TextView btnregistrar = findViewById(R.id.registrar);
+        TextView btnregistrar = findViewById(R.id.btnregistrar);
         final EditText email = findViewById(R.id.novoemail);
         final EditText senha = findViewById(R.id.novasenha);
 
@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Não existem cadastros!", Toast.LENGTH_LONG).show();
                 }
 
+            }
+        });
+        btnregistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

@@ -26,7 +26,7 @@ public class Main2Activity extends AppCompatActivity {
         final EditText NovoEmail = findViewById(R.id.novoemail);
         final EditText NovaSenha = findViewById(R.id.novasenha);
         final EditText ConfimarSenha = findViewById(R.id.confirmasenha);
-        final Button Cadastrar = findViewById(R.id.cadastrar);
+        final Button Cadastrar = findViewById(R.id.btncadastrar);
 
         Cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
